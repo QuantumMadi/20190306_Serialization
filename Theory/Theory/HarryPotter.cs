@@ -20,9 +20,8 @@ namespace Theory
         public string Species { get; set; }
         public string Gender { get; set; }
         public string House { get; set; }
-
         [JsonConverter(typeof(CustomDateTimeConverter))]
-        public DateTime DateOfBirth { get; set; }
+        public DateTime? DateOfBirth { get; set; }
         public int? YearOfBirth { get; set; }
         public string Ancestry { get; set; }
         public string EyeColour { get; set; }

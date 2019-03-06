@@ -6,7 +6,7 @@ namespace Theory
     {
         public CustomDateTimeConverter()
         {
-            base.DateTimeFormat = "yyyy-MM-dd";
+            base.DateTimeFormat = "dd-MM-yyyy";
         }
     }
 }
