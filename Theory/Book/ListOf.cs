@@ -4,9 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Book
+namespace BookApp
 {
-    class ListOf
+    public sealed class Janre : System.Attribute
     {
+        public string BookJanre { get; set; }
+
+        public Janre(string Janre)
+        {
+            BookJanre = Janre;
+        }
     }
+
 }

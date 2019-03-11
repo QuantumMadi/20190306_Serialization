@@ -13,6 +13,7 @@ namespace BookApp
     {
         static void Main(string[] args)
         {
+            
             List<Book> array = new List<Book>
             {
                 new Book()
@@ -39,13 +40,11 @@ namespace BookApp
             };
 
             SaveAsBinaryFormat(array, "Books.dat");
+
             foreach(var book in LoadFromBinaryFile("Books.dat"))
             {
                 Console.WriteLine($"{book.Name}\n{book.Author}\n{book.Price}\n{book.PublishYear.Year}\n-------------------");
-
             }
-
-
 
             Console.ReadLine();
 
