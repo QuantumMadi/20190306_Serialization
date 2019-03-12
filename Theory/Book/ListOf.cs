@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace BookApp
 {
-    public sealed class Janre : System.Attribute
-    {
+    public sealed class Janre : Attribute
+    {  
         public string BookJanre { get; set; }
-
-        public Janre(string Janre)
-        {
-            BookJanre = Janre;
-        }
+        
     }
 
 }
