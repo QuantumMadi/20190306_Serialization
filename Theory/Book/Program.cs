@@ -45,11 +45,11 @@ namespace BookApp
             {
                 Console.WriteLine($"{book.Name}\n{book.Author}\n{book.Price}\n{book.PublishYear.Year}\n-------------------");
             }
-
+           
             Console.ReadLine();
 
         }
-
+     
         static void SaveAsBinaryFormat(List<Book>objects,string fileName )
         {
             BinaryFormatter binFormat = new BinaryFormatter();

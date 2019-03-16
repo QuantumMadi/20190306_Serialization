@@ -8,10 +8,9 @@ using static System.Attribute;
 namespace BookApp
 {
     [Serializable]
-    [Janre(BookJanre = "Only Comedy")]
+    [Item("Book")]
     public class Book
-    {       
-
+    {      
         public string Name{ get;set;}
         public int Price { get; set; }       
         public string Author { get; set; }
